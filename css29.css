@@ -12,8 +12,9 @@ body {
     background-color: #212121;
 }
 .all {
-    display: flexbox;
+    display: flex;
     color: #fff;
+        flex-direction: column;
 }
 
 
@@ -126,7 +127,7 @@ img#twotone {
 }
 
 .center{
-    display: border-box;
+    box-sizing: border-box;
     color: #FFF;
 }
 .up_block {
