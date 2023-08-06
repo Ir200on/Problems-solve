@@ -11,16 +11,18 @@ body {
     padding-top: 36px;
     background-color: #212121;
 }
-.all {
-    display: flexbox;
-    color: #fff;
-}
-
 
 .nav {
-    display: inline-flex;
+    /* display: inline-flex; */
+    display: flex;
     height: 54px;
+    justify-content: space-between;
 }
+
+.nav_btn {
+    display: flex;
+}
+
 .first_btn_nav {
     display: inline-flex;
     width: 309px;
@@ -80,7 +82,7 @@ body {
     border-radius: 34px;
     opacity: 0.6200000047683716;
     background-color: #b2b2b2;
-    margin-left: 31.9%;
+    /* margin-left: 31.9%; */
 }
 .search {
     position: relative;
@@ -115,7 +117,7 @@ img#twotone {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    z-index: -1;
+    /* z-index: -1; */
 }
 .nav-text li ul{
     margin-left: 12px;
@@ -126,7 +128,8 @@ img#twotone {
 }
 
 .center{
-    display: border-box;
+    display: flex;
+    box-sizing: border-box;
     color: #FFF;
 }
 .up_block {
@@ -288,31 +291,54 @@ img#twotone {
 }
 .left-block {
     display: inline-block;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
+.right {
+    display: flex;
+    justify-content: space-between;
+}
 
 .right_block {
-    display: flex;
-    align-self:last baseline;
+    /* display: flex; */
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    align-self: last baseline;
 }
-#tiny {
-    width: 724px;
-    height: 543px;
-    margin-left: 85vh;
-    position: absolute;
-    margin-top: -65vh;
-    z-index: -1;
+
+.tiny {
+    height: 750px;
+    width: 100%;
+    object-fit: contain;
+    min-width: 300px;
 }
+
 .right_block_pink {
-    display: border-box;
-}
-#rectangle_pink {
-    margin-left: 83%;
-    position: absolute;
-    margin-top: -65vh;
-    z-index: -1;
+    /* box-sizing: border-box; */
+    display: flex;
+    flex-direction: column;
     width: 218px;
-    height: 266px;
+    position: absolute;
+    right: 45px;
+    margin-top: 35px;
+}
+
+.rectangle_pink {
+    /* margin-left: 83%; */
+    /* position: absolute; */
+    /* margin-top: -65vh; */
+    /* z-index: -1; */
+    /* width: 218px; */
+    /* height: 266px; */
     flex-shrink: 0;
+}
+
+.text_pink {
+    position: absolute;
+    top: 90px;
+    background-color: rgb(219, 194, 145);
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    padding: 5px 15px;
 }
